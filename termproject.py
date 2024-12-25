@@ -140,7 +140,7 @@ class User:
         else:
             print("您今天的卡路里攝取量正好，保持這樣的飲食。")
         
-        if self.daily_sugar > self.get_sugar_recommendation:
+        if self.daily_sugar > self.get_sugar_recommendation():
             print("警告：您的糖分攝取過高，應限制糖分的攝取，尤其是來自加工食品的糖。")
         else:
             print("您的糖分攝取在建議範圍內，繼續保持健康飲食。")
@@ -151,6 +151,30 @@ class User:
             print("建議：您的維生素C攝取較高，可以減少攝取量來達到建議範圍。")
         else:
             print("您的維生素C攝取量在健康範圍內，繼續保持。")
+
+    def get_calories_recommendation(self):
+        if self.gender == "female":
+            if self.activity_level == 'sedentary':
+                return "1800-2000 大卡"
+            elif self.activity_level == 'light':
+                return "2000-2200 大卡"
+            elif self.activity_level == 'moderate':
+                return "2200-2400 大卡"
+            elif self.activity_level == 'active':
+                return "2400-2600 大卡"
+            elif self.activity_level == 'very_active':
+                return "2600-2800 大卡"
+        else:  
+            if self.activity_level == 'sedentary':
+                return "2200-2400 大卡"
+            elif self.activity_level == 'light':
+                return "2400-2600 大卡"
+            elif self.activity_level == 'moderate':
+                return "2600-2800 大卡"
+            elif self.activity_level == 'active':
+                return "2800-3000 大卡"
+            elif self.activity_level == 'very_active':
+                return "3000-3200 大卡"
 
     def get_sugar_recommendation(self):
         if self.activity_level == 'sedentary':
@@ -163,7 +187,7 @@ class User:
             return 40
         elif self.activity_level == 'very_active':
             return 45
-            
+
 if __name__ == "__main__":
     name = input('請輸入姓名：')
     age = input('請輸入年齡：')
@@ -186,4 +210,5 @@ if __name__ == "__main__":
         user.log_food(food_name, grams)
 
     user.give_diet_advice()
+
 
