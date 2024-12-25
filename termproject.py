@@ -68,8 +68,6 @@ class User:
         self.tdee = self.calculate_tdee()  
 
     def calculate_bmr(self):
-        if self.age < 18:
-            raise ValueError("年齡不能小於18歲")
         if self.height <= 0 or self.weight <= 0:
             raise ValueError("身高或體重無效")
         if self.gender == 'female':
