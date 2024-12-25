@@ -78,7 +78,6 @@ class User:
             bmr = 10 * self.weight + 6.25 * self.height - 5 * self.age + 5  
         return bmr
 
-    # 計算總日常能量消耗（TDEE）
     def calculate_tdee(self):
         activity_factor = {
             'sedentary': 1.2,  
