@@ -149,8 +149,8 @@ class User:
         
         if self.daily_vitamin_c < 65:
             print("警告：您今天的維生素C攝取不足，應增加含維生素C豐富的食物攝取。")
-        elif self.daily_vitamin_c < 90:
-            print("建議：您的維生素C攝取較低，可以增加攝取量來達到建議範圍。")
+        elif self.daily_vitamin_c > 90:
+            print("建議：您的維生素C攝取較高，可以減少攝取量來達到建議範圍。")
         else:
             print("您的維生素C攝取量在健康範圍內，繼續保持。")
 
