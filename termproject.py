@@ -16,7 +16,7 @@ food_database = {
     "橙子": {"calories": 0.47, "protein": 0.009, "fat": 0.001, "carbs": 0.12, "sugar": 0.09, "vitamin_c": 0.53},
     "葡萄": {"calories": 0.69, "protein": 0.007, "fat": 0.001, "carbs": 0.18, "sugar": 0.16, "vitamin_c": 0.045},
     "雞蛋白": {"calories": 0.17, "protein": 0.04, "fat": 0.0, "carbs": 0.01, "sugar": 0.0, "vitamin_c": 0.0},
-    "花生": {"calories": 56.7, "protein": 25.0, "fat": 49.0, "carbs": 16.0, "sugar": 3.0, "vitamin_c": 0.0},
+    "花生": {"calories": 0.567, "protein": 0.25, "fat": 0.49, "carbs": 0.16, "sugar": 0.03, "vitamin_c": 0.0},
     "堅果混合": {"calories": 6.0, "protein": 0.15, "fat": 0.55, "carbs": 0.20, "sugar": 0.05, "vitamin_c": 0.0},
     "牛肉漢堡肉": {"calories": 2.8, "protein": 0.26, "fat": 0.22, "carbs": 0.0, "sugar": 0.0, "vitamin_c": 0.0},
     "全麥麵包": {"calories": 2.5, "protein": 0.09, "fat": 0.04, "carbs": 0.43, "sugar": 0.05, "vitamin_c": 0.0},
