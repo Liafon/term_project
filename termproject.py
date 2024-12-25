@@ -73,9 +73,9 @@ class User:
         if self.height <= 0 or self.weight <= 0:
             raise ValueError("身高或體重無效")
         if self.gender == 'female':
-            bmr = 10 * self.weight + 6.25 * self.height - 5 * self.age - 161  
+            bmr = 9.6 * self.weight + 1.8 * self.height - 4.7 * self.age + 655
         else:
-            bmr = 10 * self.weight + 6.25 * self.height - 5 * self.age + 5  
+            bmr = 13.7 * self.weight + 5 * self.height - 6.8 * self.age + 66 
         return bmr
 
     def calculate_tdee(self):
